@@ -1,10 +1,14 @@
 /* GENERAL STYLES */
 .section{
-  margin: 24px 0;
+  margin: 48px 0;
 }
 
 .bold{
   font-weight: bold;
+}
+
+.grayText{
+  color: #6f6f6f;
 }
 
 .sectionTitle{
@@ -15,6 +19,23 @@
   display: inline-block;
   margin-bottom: 24px;
   color: #6f6f6f;
+}
+
+.subsectionTitle{
+  font-weight: bold;
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+.subsectionSubtitle{
+  margin: 0 0 24px 0;
+}
+
+.seeMore{
+  color: #DB284E;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
 }
 
 /* EDITOR CHOICE */
@@ -77,4 +98,11 @@
 
 .bannerBox p{
   margin:0;
+}
+
+/* ARTICLE */
+.articleImage{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
 }

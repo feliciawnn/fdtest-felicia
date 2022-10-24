@@ -3,6 +3,7 @@ import './App.css';
 
 import EditorChoice from './components/EditorChoice';
 import BannerBox from './components/BannerBox';
+import LatestArticle from './components/LatestArticle';
 
 
 class App extends React.Component{
@@ -49,6 +50,7 @@ class App extends React.Component{
               } 
               setHeight = {250} setWidth ={970} 
           />
+          <LatestArticle articleList={this.state.articleList} />
       </div>
   );
   }
