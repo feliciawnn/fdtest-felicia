@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import EditorChoice from './components/EditorChoice';
+import BannerBox from './components/BannerBox';
 
 
 class App extends React.Component{
@@ -38,7 +39,16 @@ class App extends React.Component{
             
       return (
       <div className = "App">
-            <EditorChoice choiceList = {this.state.editorList}/>
+          <BannerBox setText='Top Frame 970x50' setHeight = {50} setWidth ={970} />
+          <BannerBox setText='Billboard 970x250' setHeight = {250} setWidth ={970} />
+          <EditorChoice choiceList = {this.state.editorList}/>
+          <BannerBox setText={`
+              Horizontal 970x250
+              (Internal campaign only)
+              `
+              } 
+              setHeight = {250} setWidth ={970} 
+          />
       </div>
   );
   }

@@ -60,3 +60,21 @@
   display: inline-block;
   margin-right: 10px;
 }
+
+/* BANNER BOX */
+.bannerBox{
+  background-color: #d3d3d3;
+  text-align: center;
+  margin: 24px auto;
+  color:#424242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: #000 solid 1px;
+  white-space: pre-line;
+}
+
+.bannerBox p{
+  margin:0;
+}
