@@ -1,9 +1,14 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './App.css';
 
 import EditorChoice from './components/EditorChoice';
 import BannerBox from './components/BannerBox';
 import LatestArticle from './components/LatestArticle';
+import LatestReview from './components/LatestReview';
+import LatestVideo from './components/LatestVideo';
 
 
 class App extends React.Component{
@@ -51,6 +56,24 @@ class App extends React.Component{
               setHeight = {250} setWidth ={970} 
           />
           <LatestArticle articleList={this.state.articleList} />
+          
+          <Container>
+                <Row>
+                    <Col sm={8}>
+                        <LatestReview />
+                    </Col>
+                    <Col sm={4}>
+                    <BannerBox setText={`
+                        MR 2
+                        300x250
+                        `
+                        } 
+                        setHeight = {250} setWidth ={300} 
+                    />
+                    </Col>
+                </Row>
+            </Container>
+            <LatestVideo />
       </div>
   );
   }

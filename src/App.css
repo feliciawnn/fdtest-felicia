@@ -1,4 +1,8 @@
 /* GENERAL STYLES */
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 .section{
   margin: 48px 0;
 }
