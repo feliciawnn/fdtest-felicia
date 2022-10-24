@@ -6,7 +6,7 @@ import '../App.css'
 
 function LatestArticle({articleList}){
     return(
-        <div className='latestArticle'>
+        <div className='latestArticle section'>
             <Container>
                 <Row>
                     <Col>

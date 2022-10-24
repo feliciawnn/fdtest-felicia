@@ -12,7 +12,7 @@ function BannerBox({setText, setHeight, setWidth}){
     }   
 
     return(
-        <div className='bannerBox' style={divStyle}>
+        <div className='bannerBox section' style={divStyle}>
            <p>{setText}</p>
         </div>
     )
