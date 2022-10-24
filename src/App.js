@@ -9,6 +9,7 @@ import BannerBox from './components/BannerBox';
 import LatestArticle from './components/LatestArticle';
 import LatestReview from './components/LatestReview';
 import LatestVideo from './components/LatestVideo';
+import Groups from './components/Groups';
 
 
 class App extends React.Component{
@@ -73,6 +74,7 @@ class App extends React.Component{
                     </Col>
                 </Row>
             </Container>
+            <Groups />
             <LatestVideo />
       </div>
   );

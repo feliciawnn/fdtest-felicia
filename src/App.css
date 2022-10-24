@@ -38,7 +38,6 @@ body{
 .seeMore{
   color: #DB284E;
   text-decoration: none;
-  display: inline-block;
   float: right;
 }
 
@@ -109,4 +108,27 @@ body{
   width: 100%;
   object-fit: cover;
   border-radius: 16px;
+}
+
+/* GROUP CARD */
+.groupCard{
+  box-shadow: 0 0 15px 4px rgba(136, 136, 136, 0.3);
+  border-radius: 8px;
+  height:400px;
+  padding: 50px;
+  text-align: center;
+}
+
+.groupImage{
+  width:70%;
+  margin-bottom: 14px;
+}
+
+.cardIcon{
+  margin: 0 20px;
+  fill:#DB284E;
+}
+
+.groupSubtitle{
+  margin: 20px 0;
 }
