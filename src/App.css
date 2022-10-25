@@ -73,11 +73,20 @@ body{
   color: #6f6f6f;
 }
 
+
+/* ITEM CARD */
 .productDescription{
   border: #d3d3d3 solid 1px;
   border-radius: 8px;
-  padding: 8px;
+  padding: 24px;
 }
+
+.itemImg{
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+
 
 /* STAR RATING */
 .rating{
