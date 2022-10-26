@@ -13,6 +13,8 @@ import Groups from './components/Groups';
 import Trending from './components/Trending';
 import Brands from './components/Brands';
 import ProductMatch from './components/ProductMatch';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 class App extends React.Component{
@@ -46,10 +48,11 @@ class App extends React.Component{
   render() {
       const { isLoaded, items } = this.state;
         if (!isLoaded) return <div>
-            <h1> Please wait some time.... </h1> </div> ;
+            <h1> Populating the webpage, please wait...</h1> </div> ;
             
       return (
       <div className = "App">
+          <Header />
           <BannerBox setText='Top Frame 970x50' setHeight = {50} setWidth ={970} />
           <BannerBox setText='Billboard 970x250' setHeight = {250} setWidth ={970} />
           <EditorChoice choiceList = {this.state.editorList}/>
@@ -90,6 +93,7 @@ class App extends React.Component{
                   <p>Product reviews, Tips and tricks, Expert and Customer Opinions, Beauty Tutorials, Discussion, Beauty Workshops, anything! We are here to be your friendly solution to all things beauty, inside and out!</p>
               </div>
             </Container>
+            <Footer />
             <BannerBox setText='Bottom Frame 970x50, 468x60, 320x50' setHeight = {50} setWidth ={970} />
       </div>
   );
