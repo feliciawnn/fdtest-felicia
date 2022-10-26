@@ -10,6 +10,7 @@ import LatestArticle from './components/LatestArticle';
 import LatestReview from './components/LatestReview';
 import LatestVideo from './components/LatestVideo';
 import Groups from './components/Groups';
+import Trending from './components/Trending';
 
 
 class App extends React.Component{
@@ -76,6 +77,7 @@ class App extends React.Component{
             </Container>
             <Groups />
             <LatestVideo />
+            <Trending trendingList={this.state.editorList}/>
       </div>
   );
   }
