@@ -223,3 +223,23 @@ body{
   display: block;
   text-overflow: ellipsis;
 }
+
+/* BRANDS */
+.brandImg{
+  height:80px;
+  width: 100%;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.brandImgWrapper{
+  display: inline-block;
+  width: 14%;
+  margin: 1%;
+}
+
+.brandImgContainer{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
