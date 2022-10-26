@@ -62,7 +62,7 @@ class App extends React.Component{
           <Container>
                 <Row>
                     <Col sm={8}>
-                        <LatestReview />
+                        <LatestReview reviewsList={this.state.reviewList}/>
                     </Col>
                     <Col sm={4}>
                     <BannerBox setText={`
