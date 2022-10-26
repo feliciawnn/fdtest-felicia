@@ -90,6 +90,7 @@ class App extends React.Component{
                   <p>Product reviews, Tips and tricks, Expert and Customer Opinions, Beauty Tutorials, Discussion, Beauty Workshops, anything! We are here to be your friendly solution to all things beauty, inside and out!</p>
               </div>
             </Container>
+            <BannerBox setText='Bottom Frame 970x50, 468x60, 320x50' setHeight = {50} setWidth ={970} />
       </div>
   );
   }
