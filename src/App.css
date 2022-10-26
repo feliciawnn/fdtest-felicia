@@ -49,6 +49,9 @@ body{
 /* EDITOR CHOICE */
 .editorItem{
   margin: 24px 0;
+  border: #d3d3d3 solid 1px;
+  border-radius: 16px;
+  margin: 0 12px;
 }
 
 .editorProfile{
