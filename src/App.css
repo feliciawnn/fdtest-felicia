@@ -15,6 +15,11 @@ body{
   color: #6f6f6f;
 }
 
+.pinkText{
+  color: #DB284E;
+  font-weight: bold;
+}
+
 .sectionTitle{
   font-weight: bold;
 }
@@ -76,8 +81,9 @@ body{
 
 /* ITEM CARD */
 .productDescription{
-  border: #d3d3d3 solid 1px;
-  border-radius: 8px;
+  background-color: #FFF;
+  border-radius: 16px;
+  margin:8px;
   padding: 24px;
 }
 
@@ -242,4 +248,40 @@ body{
   display: inline-block;
   width: 100%;
   text-align: center;
+}
+
+
+/* CONTAINER FLUID DIV */
+.pinkBackground{
+  background-color: #FDDAE0;
+  z-index: -1;
+}
+
+.modelImg{
+  margin:0;
+  padding:0;
+  max-width:20%;
+  z-index: 0;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.sectionTextContainer{
+  width: 20%;
+  margin: auto 0;
+  display: inline-block;
+}
+
+.matchButton{
+  background-color: #DB284E;
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 36px;
+  float: right;
+}
+
+.matchItem{
+  margin: 48px 0;
+  width: 18%;
 }

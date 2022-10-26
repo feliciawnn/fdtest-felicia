@@ -12,6 +12,7 @@ import LatestVideo from './components/LatestVideo';
 import Groups from './components/Groups';
 import Trending from './components/Trending';
 import Brands from './components/Brands';
+import ProductMatch from './components/ProductMatch';
 
 
 class App extends React.Component{
@@ -31,6 +32,7 @@ class App extends React.Component{
         .then((json) => {
             this.setState({
                 items: json, //bisa apus
+                productsList: json["editor's choice"],
                 editorList: json["editor's choice"],
                 articleList: json["latest articles"],
                 reviewList: json["latest review"],
@@ -51,6 +53,7 @@ class App extends React.Component{
           <BannerBox setText='Top Frame 970x50' setHeight = {50} setWidth ={970} />
           <BannerBox setText='Billboard 970x250' setHeight = {250} setWidth ={970} />
           <EditorChoice choiceList = {this.state.editorList}/>
+          <ProductMatch productsList={this.state.productsList}/>
           <BannerBox setText={`
               Horizontal 970x250
               (Internal campaign only)
@@ -58,6 +61,7 @@ class App extends React.Component{
               } 
               setHeight = {250} setWidth ={970} 
           />
+          
           <LatestArticle articleList={this.state.articleList} />
           
           <Container>
@@ -80,6 +84,12 @@ class App extends React.Component{
             <LatestVideo />
             <Trending trendingList={this.state.editorList}/>
             <Brands />
+            <Container>
+              <div className='section'>
+                  <h2 className='sectionTitle'>Latest Reviews</h2>
+                  <p>Product reviews, Tips and tricks, Expert and Customer Opinions, Beauty Tutorials, Discussion, Beauty Workshops, anything! We are here to be your friendly solution to all things beauty, inside and out!</p>
+              </div>
+            </Container>
       </div>
   );
   }
